@@ -1,0 +1,42 @@
+.clients-title, 
+.number {
+    color: #212121;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+}
+
+.block-clients {
+    width: 1170px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.card_item {
+    fill: #AFB1B8;
+}
+
+.clients-card {
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    width: 170px;
+    margin-right: 30px;
+}
+
+.clients-card:last-child {
+    margin: 0;
+}
+
+.clients-card:hover {
+    border: 1px solid #2196F3;
+}
+
+.clients-card:hover .card_item use {
+    fill: #2196F3;
+}
