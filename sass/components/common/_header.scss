@@ -1,0 +1,118 @@
+.header {
+  height: 80px;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__EmailPhone {
+    width: 333px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 315px;
+  }
+
+  &-email-item {
+    display: flex;
+    align-items: center;
+  }
+
+  &-phone-item {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  margin-left: 93px;
+
+  &__item {
+    font-family: $mainfont;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    margin-right: 53px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.nav__item a {
+  text-decoration: none;
+  color: $mainColor;
+  padding-bottom: 28px;
+  position: relative;
+}
+
+.nav__item a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  border-radius: 2px;
+  background-color: $activeColor;
+  transition: width 500ms ease-out;
+}
+
+.nav__item a:hover::after {
+  width: 100%;
+}
+
+.nav__item a:hover {
+  color: $activeColor;
+}
+
+.text--envelope {
+  margin-left: 10px;
+  color: $notactiveColor;
+  font-family: $mainfont;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+.phone-number {
+  margin-left: 10px;
+  color: $notactiveColor;
+  font-family: $mainfont;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+.icon--email {
+  fill: $notactiveColor;
+}
+
+.icon--phone {
+  fill: $notactiveColor;
+}
+
+.header-email-item:hover .text--envelope,
+.header-phone-item:hover .phone-number {
+  color: $activeColor;
+}
+
+.header-email-item:hover .icon--email use,
+.header-phone-item:hover .icon--phone use {
+  fill: $activeColor;
+}

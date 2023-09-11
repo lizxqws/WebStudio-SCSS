@@ -12,27 +12,27 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header-container">
-        <div class="header-block">
+    <header class="header">
+        <div class="header__block">
             <svg width="145" height="20" viewBox="0 0 145 20">
-                <use xlink:href="./assets/WebStudio.svg#WebStudio"></use>
+                <use xlink:href="./assets/WebStudioBlack.svg#WebStudioBlack"></use>
             </svg>
             <nav>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="">Студія</a></li>
-                    <li class="nav-item"><a href="">Портфоліо</a></li>
-                    <li class="nav-item"><a href="">Контакти</a></li>
+                <ul class="nav">
+                    <li class="nav__item"><a href="./index.html">Студія</a></li>
+                    <li class="nav__item"><a href="./portfolio.html">Портфоліо</a></li>
+                    <li class="nav__item"><a href="">Контакти</a></li>
                 </ul>
             </nav>
-            <div class="block_email-and-phone">
-                <div class="email-card">
-                    <svg class="email" width="16" height="12" viewBox="0 0 16 12">
+            <div class="header__EmailPhone">
+                <div class="header-email-item">
+                    <svg class="icon--email" width="16" height="12" viewBox="0 0 16 12">
                         <use xlink:href="./assets/envelope.svg#icon-envelope"></use>
                     </svg>
-                    <p class="text-envelope">info@devstudio.com</p>
+                    <p class="text--envelope">info@devstudio.com</p>
                 </div>
-                <div class="phone-card">
-                    <svg class="phone" width="10" height="16" viewBox="0 0 10 16">
+                <div class="header-phone-item">
+                    <svg class="icon--phone" width="10" height="16" viewBox="0 0 10 16">
                         <use xlink:href="./assets/smartphone.svg#icon-smartphone"></use>
                     </svg>
                     <p class="phone-number">+38 096 111 11 11</p>
@@ -44,73 +44,73 @@
     <button class="btn" data-modal-open>Замовити послугу</button>
     <div class="backdrop is-hidden" data-modal >
         <div class="modal-window">
-            <button class="close-btn" data-modal-close>
-                <svg class="close-icon" width="18" height="18" viewBox="0 0 18 18">
+            <button class="btn--close" data-modal-close>
+                <svg class="icon--close" width="18" height="18" viewBox="0 0 18 18">
                     <use xlink:href="./assets/close-icon.svg#close-icon"></use>
                 </svg>
             </button>
-            <h2 class="modal-window-title mw-text">Залиште свої дані, ми вам передзвонимо</h2>
-            <form class="form-wrapper">
-                <div class="field-wrapper">
-                    <label class="mw-text field-title" for="username">Ім'я</label>
-                    <div class="field-box">
-                        <svg class="field-icon" width="18" height="18" viewBox="0 0 18 18">
+            <h2 class="modal-window__title mw__text">Залиште свої дані, ми вам передзвонимо</h2>
+            <form>
+                <div class="field__wrapper">
+                    <label class="mw__text field__title" for="username">Ім'я</label>
+                    <div class="field__box">
+                        <svg class="field__icon" width="18" height="18" viewBox="0 0 18 18">
                             <use xlink:href="./assets/person-icon.svg#person-icon"></use>
                         </svg>
                         <input id="username" class="field" type="text"/>
                     </div>
                 </div>
-                <div class="field-wrapper">
-                    <label class="mw-text field-title" for="phone-number">Телефон</label>
-                    <div class="field-box">
-                        <svg class="field-icon" width="18" height="18" viewBox="0 0 18 18">
+                <div class="field__wrapper">
+                    <label class="mw__text field__title" for="phone-number">Телефон</label>
+                    <div class="field__box">
+                        <svg class="field__icon" width="18" height="18" viewBox="0 0 18 18">
                             <use xlink:href="./assets/phone-icon.svg#phone-icon"></use>
                         </svg>
                         <input  min="3" max="10" id="phone-number" class="field" type="text"/>
                     </div>
                 </div>
-                <div class="field-wrapper">
-                    <label class="mw-text field-title" for="email">Пошта</label>
-                    <div class="field-box">
-                        <svg class="field-icon" width="18" height="18" viewBox="0 0 18 18">
+                <div class="field__wrapper">
+                    <label class="mw__text field__title" for="email">Пошта</label>
+                    <div class="field__box">
+                        <svg class="field__icon" width="18" height="18" viewBox="0 0 18 18">
                             <use xlink:href="./assets/email-icon.svg#email-icon"></use>
                         </svg>
                         <input id="email" class="field" type="email"/>
                     </div>
                 </div>
-                <div class="field-wrapper">
-                    <label class="mw-text field-title" for="comment">Коментар</label>
-                    <textarea id="comment" class="field area mw-text" rows="10" placeholder="Введіть текст"></textarea>
+                <div class="field__wrapper">
+                    <label class="mw__text field__title" for="comment">Коментар</label>
+                    <textarea id="comment" class="field area mw__text" rows="10" placeholder="Введіть текст"></textarea>
                 </div>
             </form>
-            <div class="checkbox-container">
+            <div class="checkbox__container">
                 <input id="verification" type="checkbox"/>
-                <label class="mw-text checked" for="verification">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label>
+                <label class="mw__text checked" for="verification">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label>
             </div>
-            <div class="btn-box">
+            <div class="btn__box">
                 <button class="btn" data-modal-close>Відправити</button>
             </div>
         </div>
     </div>
-    <!-- Section "What we do" -->
-    <section class="whatwedo-section container">
-        <h2 class="whatwedo-subtitle">Чим ми займаємося</h2>
-        <div class="whatwedo-pictures">
-            <div class="whatwedo-image">
+    <!-- Section "Our services" -->
+    <section class="ourservices container">
+        <h2 class="ourservices__title">Чим ми займаємося</h2>
+        <div class="ourservices__pictures">
+            <div class="ourservices__image">
                 <img src="./assets/wwd-image1.png" alt="desktop">
-                <div class="whatwedo-label">
+                <div class="ourservices__label">
                     <p>Десктопні додатки</p>
                 </div>
             </div>
-            <div class="whatwedo-image">
+            <div class="ourservices__image">
                 <img src="./assets/wwd-image2.png" alt="mobile">
-                <div class="whatwedo-label">
+                <div class="ourservices__label">
                     <p>Мобільні додатки</p>
                 </div>
             </div>
-            <div class="whatwedo-image">
+            <div class="ourservices__image">
                 <img src="./assets/wwd-image3.png" alt="design">
-                <div class="whatwedo-label">
+                <div class="ourservices__label">
                     <p>Дизайнерські рішення</p>
                 </div>
             </div>
@@ -118,58 +118,58 @@
     </section>
     <!--Section "Our clients" -->
     <div class="social-links">
-        <div class="ellipse">
-            <svg class="social_icon" width="20px" height="20px" viewBox="0 0 20 20">
+        <div class="social-links__ellipse">
+            <svg class="social-icon" width="20px" height="20px" viewBox="0 0 20 20">
                 <use xlink:href="./assets/instagram.svg#icon-inst"></use>
             </svg>
         </div>
-        <div class="ellipse">
-            <svg class="social_icon" width="20px" height="20px" viewBox="0 0 20 20">
+        <div class="social-links__ellipse">
+            <svg class="social-icon" width="20px" height="20px" viewBox="0 0 20 20">
                 <use xlink:href="./assets/twitter.svg#icon-twitter"></use>
             </svg>
         </div>
-        <div class="ellipse">
-            <svg class="social_icon" width="20px" height="20px" viewBox="0 0 20 20">
+        <div class="social-links__ellipse">
+            <svg class="social-icon" width="20px" height="20px" viewBox="0 0 20 20">
                 <use xlink:href="./assets/facebook.svg#icon-facebook"></use>
             </svg>
         </div>
-        <div class="ellipse">
-            <svg class="social_icon" width="20px" height="20px" viewBox="0 0 20 20">
+        <div class="social-links__ellipse">
+            <svg class="social-icon" width="20px" height="20px" viewBox="0 0 20 20">
                 <use xlink:href="./assets/linkedin.svg#icon-linkedin"></use>
             </svg>
         </div>
     </div>
     <!-- Section "Regular clients" -->
-    <section class="container">
-        <h2 class="clients-title">Постійні клієнти</h2>
-        <div class="block-clients">
-            <div class="clients-card">
-                <svg class="card_item" width="106" height="60" viewBox="0 0 106 60">
+    <section class="regular-clients container">
+        <h2 class="regular-clients__title">Постійні клієнти</h2>
+        <div class="regular-clients__block">
+            <div class="regular-clients__card">
+                <svg class="regular-clients__icon" width="106" height="60" viewBox="0 0 106 60">
                     <use xlink:href="./assets/Logo1.svg#Logo1"></use>
                 </svg>
             </div>
-            <div class="clients-card">
-                <svg class="card_item" width="106" height="60" viewBox="0 0 106 60">
+            <div class="regular-clients__card">
+                <svg class="regular-clients__icon" width="106" height="60" viewBox="0 0 106 60">
                     <use xlink:href="./assets/Logo2.svg#Logo2"></use>
                 </svg>
             </div>
-            <div class="clients-card">
-                <svg class="card_item" width="106" height="60" viewBox="0 0 106 60">
+            <div class="regular-clients__card">
+                <svg class="regular-clients__icon" width="106" height="60" viewBox="0 0 106 60">
                     <use xlink:href="./assets/Logo3.svg#Logo3"></use>
                 </svg>
             </div>
-            <div class="clients-card">
-                <svg class="card_item" width="106" height="60" viewBox="0 0 106 60">
+            <div class="regular-clients__card">
+                <svg class="regular-clients__icon" width="106" height="60" viewBox="0 0 106 60">
                     <use xlink:href="./assets/Logo4.svg#Logo4"></use>
                 </svg>
             </div>
-            <div class="clients-card">
-                <svg class="card_item" width="106" height="60" viewBox="0 0 106 60">
+            <div class="regular-clients__card">
+                <svg class="regular-clients__icon" width="106" height="60" viewBox="0 0 106 60">
                     <use xlink:href="./assets/Logo5.svg#Logo5"></use>
                 </svg>
             </div>
-            <div class="clients-card">
-                <svg class="card_item" width="106" height="60" viewBox="0 0 106 60">
+            <div class="regular-clients__card">
+                <svg class="regular-clients__icon" width="106" height="60" viewBox="0 0 106 60">
                     <use xlink:href="./assets/Logo6.svg#Logo6"></use>
                 </svg>
             </div>
@@ -177,40 +177,50 @@
     </section>
     <!-- Footer -->
     <footer>
-        <section class="section-footer container">
-            <div class="social-links-block">
-                <p class="text-task3">приєднуйтесь</p>
-                <div class="social-links social-links2">
-                    <div class="ellipse2">
-                        <svg class="social_icon2" width="20px" height="20px" viewBox="0 0 20 20">
+        <section class="ftr container">
+            <div class="ftr__block--address">
+                <svg width="145" height="20" viewBox="0 0 145 20">
+                    <use xlink:href="./assets/WebStudioWhite.svg#WebStudioWhite"></use>
+                </svg>
+                <div class="ftr-address__text">
+                    <p class="ftr-address">м. Київ, пр-т Лесі Українки, 26</p>
+                    <p class="text--envelope">info@devstudio.com</p>
+                    <p class="phone-number">+38 096 111 11 11</p>
+                </div>
+            </div>
+            <div class="ftr__socialLinks">
+                <p class="ftr-socialLinks__title">приєднуйтесь</p>
+                <div class="ftr-socialLinks__block">
+                    <div class="ftr-socialLinks__ellipse">
+                        <svg class="ftr-socialIcon" width="20px" height="20px" viewBox="0 0 20 20">
                             <use xlink:href="./assets/instagram2.svg#icon-inst2"></use>
                         </svg>
                     </div>
-                    <div class="ellipse2">
-                        <svg class="social_icon2" width="20px" height="20px" viewBox="0 0 20 20">
+                    <div class="ftr-socialLinks__ellipse">
+                        <svg class="ftr-socialIcon" width="20px" height="20px" viewBox="0 0 20 20">
                             <use xlink:href="./assets/twitter2.svg#icon-twitter2"></use>
                         </svg>
                     </div>
-                    <div class="ellipse2">
-                        <svg class="social_icon2" width="20px" height="20px" viewBox="0 0 20 20">
+                    <div class="ftr-socialLinks__ellipse">
+                        <svg class="ftr-socialIcon" width="20px" height="20px" viewBox="0 0 20 20">
                             <use xlink:href="./assets/facebook2.svg#icon-facebook2"></use>
                         </svg>
                     </div>
-                    <div class="ellipse2">
-                        <svg class="social_icon2" width="20px" height="20px" viewBox="0 0 20 20">
+                    <div class="ftr-socialLinks__ellipse">
+                        <svg class="ftr-socialIcon" width="20px" height="20px" viewBox="0 0 20 20">
                             <use xlink:href="./assets/linkedin2.svg#icon-linkedin2"></use>
                         </svg>
                     </div>
                 </div>
             </div>
             <form>
-                <div class="footer-email">
-                    <p class="footer-email-title">Підпишіться на розсилку</p>
-                    <div class="footer-emailandbtn">
-                        <input type="email" placeholder="E-mail" id="footer-email-field">
-                        <button class="footer-btn">
+                <div class="ftr__email">
+                    <p class="ftr-email__title">Підпишіться на розсилку</p>
+                    <div class="ftr__emailBtn">
+                        <input type="email" placeholder="E-mail" id="ftr-email__field">
+                        <button class="ftr__btn">
                             Підписатися
-                            <svg class="footer-icon-send" width="24" height="24" viewBox="0 0 24 24">
+                            <svg class="ftr-sendIcon" width="24" height="24" viewBox="0 0 24 24">
                                 <use xlink:href="./assets/icon-send.svg#icon-send"></use>
                             </svg>
                         </button>
