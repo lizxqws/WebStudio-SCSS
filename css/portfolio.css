@@ -26,6 +26,12 @@
   display: flex;
   align-items: center;
 }
+.header-line {
+  border: none;
+  background-color: #ECECEC;
+  height: 1px;
+  margin: 0;
+}
 
 .nav {
   list-style: none;
@@ -47,7 +53,7 @@
 .nav__item a {
   text-decoration: none;
   color: #212121;
-  padding-bottom: 28px;
+  padding-bottom: 32px;
   position: relative;
 }
 
