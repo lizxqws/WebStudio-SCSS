@@ -24,6 +24,13 @@
     display: flex;
     align-items: center;
   }
+
+  &-line {
+    border: none;
+    background-color: #ECECEC;
+    height: 1px;
+    margin: 0;
+  }
 }
 
 .nav {
@@ -47,7 +54,7 @@
 .nav__item a {
   text-decoration: none;
   color: $mainColor;
-  padding-bottom: 28px;
+  padding-bottom: 32px;
   position: relative;
 }
 
