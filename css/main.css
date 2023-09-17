@@ -1,4 +1,4 @@
-.ftr__btn, .ftr-socialLinks__ellipse, .ftr-socialLinks__block, footer, .social-links__ellipse, .social-links, .ourservices__label, .ourservices__pictures, .btn__box, .checkbox__container, .solution__block, .solution-overlay, .header__EmailPhone, .header__block, .header {
+.ftr__btn, .ftr-socialLinks__ellipse, .ftr-socialLinks__block, footer, .social-links__ellipse, .social-links, .ourservices__label, .ourservices__pictures, .ourspecialty__rectangle, .ourspecialty__block, .btn__box, .checkbox__container, .solution__block, .solution-overlay, .header__EmailPhone, .header__block, .header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,13 +10,13 @@
   font-style: normal;
 }
 
-#ftr-email__field::placeholder, .ftr-address, .checked, .text--envelope, .phone-number, .nav__item {
+#ftr-email__field::placeholder, .ftr-address, .ourspecialty__text, .checked, .text--envelope, .phone-number, .nav__item {
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
 }
 
-.ftr-email__title, .ftr-socialLinks__title, .regular-clients__title, .ourservices__label p, .ourservices__title {
+.ftr-email__title, .ftr-socialLinks__title, .regular-clients__title, .ourservices__label p, .ourservices__title, .ourspecialty__title {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -334,10 +334,37 @@
   text-align: center;
 }
 
-.ourservices {
-  width: 1170px;
-  height: 386px;
+.ourspecialty__block {
+  justify-content: space-between;
+  margin-bottom: 94px;
 }
+.ourspecialty__box {
+  width: 270px;
+  height: 248px;
+}
+.ourspecialty__boxSmall {
+  height: 224px;
+}
+.ourspecialty__rectangle {
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  margin-bottom: 30px;
+}
+.ourspecialty__title {
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.ourspecialty__text {
+  color: #757575;
+  font-family: "Roboto", sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+
 .ourservices__title {
   color: #212121;
   text-align: center;
