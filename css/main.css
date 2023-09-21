@@ -317,7 +317,6 @@
 .btn:hover {
   background: #188ce8;
 }
-
 .btn-send {
   color: #FFF;
   font-family: "Roboto", sans-serif;
@@ -332,6 +331,10 @@
   background: #2196F3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
+  background: #2196f3;
+}
+.btn-send:hover {
+  background: #188ce8;
 }
 
 .ourspecialty__block {

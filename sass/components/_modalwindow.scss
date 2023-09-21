@@ -157,8 +157,14 @@
   &:hover {
     background: #188ce8;
   }
+
+  &-send {
+    @include button($button-width: 200px);
+    background: #2196f3;
+
+    &:hover {
+      background: #188ce8;
+    }
+  }
 }
 
-.btn-send {
-  @include button($button-width: 200px);
-}
