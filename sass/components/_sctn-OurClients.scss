@@ -1,7 +1,6 @@
 .social-links {
   width: 206px;
-  display: flex;
-  align-items: center;
+  @extend %flex;
   justify-content: space-between;
 
   .social-icon {
@@ -10,9 +9,7 @@
 }
 
 .social-links__ellipse {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex;
   width: 44px;
   height: 44px;
   background-color: $white;
