@@ -131,12 +131,13 @@
 }
 
 .checked {
+  @extend %main-text;
+
   font-family: $mainfont;
   color: $notactiveColor;
   line-height: 24px;
   letter-spacing: 0.42px;
   margin-left: 8px;
-  @extend %main-text;
 }
 
 .checked a {

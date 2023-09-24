@@ -1,16 +1,18 @@
 .header {
+  @extend %flex;
+
   height: 80px;
   background-color: $white;
-  @extend %flex;
 
   &__block {
     @extend %flex;
   }
 
   &__EmailPhone {
+    @extend %flex;
+
     width: 333px;
     height: 16px;
-    @extend %flex;
     justify-content: space-between;
     margin-left: 315px;
   }
@@ -27,7 +29,7 @@
 
   &-line {
     border: none;
-    background-color: #ECECEC;
+    background-color: #ececec;
     height: 1px;
     margin: 0;
   }
@@ -39,8 +41,9 @@
   margin-left: 93px;
 
   &__item {
-    font-family: $mainfont;
     @extend %main-text;
+
+    font-family: $mainfont;
     font-weight: 500;
     letter-spacing: 0.28px;
     margin-right: 53px;
@@ -78,11 +81,13 @@
   color: $activeColor;
 }
 
-.text--envelope, .phone-number {
+.text--envelope,
+.phone-number {
+  @extend %main-text;
+
   margin-left: 10px;
   color: $notactiveColor;
   font-family: $mainfont;
-  @extend %main-text;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;

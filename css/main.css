@@ -10,7 +10,8 @@
   font-style: normal;
 }
 
-#ftr-email__field::placeholder, .ftr-address, .ourspecialty__text, .checked, .text--envelope, .phone-number, .nav__item {
+#ftr-email__field::placeholder, .ftr-address, .ourspecialty__text, .checked, .text--envelope,
+.phone-number, .nav__item {
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -43,7 +44,7 @@
 }
 .header-line {
   border: none;
-  background-color: #ECECEC;
+  background-color: #ececec;
   height: 1px;
   margin: 0;
 }
@@ -90,7 +91,8 @@
   color: #2196F3;
 }
 
-.text--envelope, .phone-number {
+.text--envelope,
+.phone-number {
   margin-left: 10px;
   color: #757575;
   font-family: "Roboto", sans-serif;
@@ -526,7 +528,6 @@ footer {
   justify-content: space-between;
 }
 .ftr__btn {
-  margin-left: 12px;
   color: #FFF;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -540,6 +541,7 @@ footer {
   background: #2196F3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
+  margin-left: 12px;
 }
 .ftr-sendIcon {
   margin-left: 10px;
