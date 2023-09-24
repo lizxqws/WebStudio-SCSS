@@ -58,14 +58,14 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
-}
 
-.icon-button__icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  fill: black;
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: black;
+  }
 }
 
 .field__wrapper {
@@ -137,13 +137,13 @@
   letter-spacing: 0.42px;
   margin-left: 8px;
   @extend %main-text;
-}
 
-.checked a {
-  color: $activeColor;
-  line-height: 24px;
-  letter-spacing: 0.42px;
-  text-decoration-line: underline;
+  a {
+    color: $activeColor;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    text-decoration-line: underline;
+  }
 }
 
 .btn__box {
