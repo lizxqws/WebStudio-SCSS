@@ -8,7 +8,7 @@
     flex-direction: column;
     @extend %flex;
   }
-
+  
   // portfolio-filters
 
   &__filters {
@@ -44,7 +44,7 @@
         0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
     }
   }
-
+  
   // portfolio-cars
 
   &__block-cards {
@@ -136,17 +136,5 @@
 // portfolio-overlay
 .portfolio__card:hover .portfolio__overlay {
   transform: translateY(0);
-  color: $white;
-}
-
-// portfolio-filters
-
-.portfolio__filter-item a {
-  text-decoration: none;
-  text-transform: none;
-  color: $mainColor;
-}
-
-.portfolio__filter-item:hover a {
   color: $white;
 }
