@@ -1,0 +1,41 @@
+.ourspecialty {
+  &__block {
+    @extend %flex;
+    justify-content: space-between;
+    margin-bottom: 94px;
+  }
+
+  &__box {
+    width: 270px;
+    height: 248px;
+  }
+
+  &__boxSmall {
+    height: 224px;
+  }
+
+  &__rectangle {
+    height: 120px;
+    border-radius: 4px;
+    background: #f5f4fa;
+    @extend %flex;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    color: $mainColor;
+    font-family: $mainfont;
+    font-size: 14px;
+    @extend %medium-text;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    color: $notactiveColor;
+    font-family: $mainfont;
+    @extend %main-text;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+  }
+}

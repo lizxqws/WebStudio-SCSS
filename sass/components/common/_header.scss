@@ -24,6 +24,13 @@
     display: flex;
     align-items: center;
   }
+
+  &-line {
+    border: none;
+    background-color: #ececec;
+    height: 1px;
+    margin: 0;
+  }
 }
 
 .nav {
@@ -47,7 +54,7 @@
 .nav__item a {
   text-decoration: none;
   color: $mainColor;
-  padding-bottom: 28px;
+  padding-bottom: 32px;
   position: relative;
 }
 
@@ -71,7 +78,8 @@
   color: $activeColor;
 }
 
-.text--envelope, .phone-number {
+.text--envelope,
+.phone-number {
   margin-left: 10px;
   color: $notactiveColor;
   font-family: $mainfont;
@@ -79,6 +87,7 @@
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+  cursor: pointer;
 }
 
 .icon--email {
