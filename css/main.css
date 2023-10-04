@@ -1,4 +1,4 @@
-.ftr__btn, .ftr-socialLinks__ellipse, .ftr-socialLinks__block, footer, .social-links__ellipse, .social-links, .our-team__card-info, .our-team__block, .ourservices__label, .ourservices__pictures, .ourspecialty__rectangle, .ourspecialty__block, .btn__box, .checkbox__container, .solution__block, .solution-overlay, .header__EmailPhone, .header__block, .header {
+.ftr__btn, .ftr-socialLinks__ellipse, .ftr-socialLinks__block, footer, .social-links__ellipse, .social-links, .our-team__card-info, .our-team__block, .ourservices__label, .ourservices__pictures, .ourspecialty-box__rectangle, .ourspecialty__block, .btn__box, .checkbox__container, .solution__block, .solution-overlay, .header__EmailPhone, .header__block, .header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,14 +10,14 @@
   font-style: normal;
 }
 
-#ftr-email__field::placeholder, .ftr-address, .our-team__card-subtitle, .ourspecialty__text, .checked, .text--envelope,
+#ftr-email__field::placeholder, .ftr-address, .our-team__card-subtitle, .ourspecialty-box__text, .checked, .text--envelope,
 .phone-number, .nav__item {
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
 }
 
-.ftr-email__title, .ftr-socialLinks__title, .regular-clients__title, .our-team__title, .ourservices__label p, .ourservices__title, .ourspecialty__title {
+.ftr-email__title, .ftr-socialLinks__title, .regular-clients__title, .our-team__title, .ourservices__label p, .ourservices__title, .ourspecialty-box__title {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -346,27 +346,27 @@
   justify-content: space-between;
   margin-bottom: 94px;
 }
-.ourspecialty__box {
+.ourspecialty-box {
   width: 270px;
   height: 248px;
 }
-.ourspecialty__boxSmall {
+.ourspecialty-box__boxSmall {
   height: 224px;
 }
-.ourspecialty__rectangle {
+.ourspecialty-box__rectangle {
   height: 120px;
   border-radius: 4px;
   background: #f5f4fa;
   margin-bottom: 30px;
 }
-.ourspecialty__title {
+.ourspecialty-box__title {
   color: #212121;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.ourspecialty__text {
+.ourspecialty-box__text {
   color: #757575;
   font-family: "Roboto", sans-serif;
   line-height: 24px;
@@ -591,7 +591,6 @@ footer {
   justify-content: space-between;
 }
 .ftr__btn {
-  margin-left: 12px;
   color: #FFF;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -605,6 +604,7 @@ footer {
   background: #2196F3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
+  margin-left: 12px;
   cursor: pointer;
 }
 .ftr-sendIcon {

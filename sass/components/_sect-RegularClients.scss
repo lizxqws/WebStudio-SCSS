@@ -1,10 +1,11 @@
 .regular-clients {
   &__title {
+    @extend %medium-text;
+
     color: $mainColor;
     text-align: center;
     font-family: $mainfont;
     font-size: 36px;
-    @extend %medium-text;
     letter-spacing: 1.08px;
   }
 

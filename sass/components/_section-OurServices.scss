@@ -1,11 +1,11 @@
 .ourservices {
-  
   &__title {
+    @extend %medium-text;
+
     color: $mainColor;
     text-align: center;
     font-family: $mainfont;
     font-size: 36px;
-    @extend %medium-text;
     letter-spacing: 1.08px;
   }
 
@@ -22,22 +22,24 @@
   }
 
   &__label {
+    @extend %flex;
+
     position: absolute;
     bottom: 0;
     left: 0;
     margin: 0;
     width: 370px;
     height: 70px;
-    @extend %flex;
     background: rgba(47, 48, 58, 0.8);
   }
 }
 .ourservices__label p {
+  @extend %medium-text;
+  
   margin: 0;
   color: $white;
   text-align: center;
   font-family: $mainfont;
   font-size: 14px;
-  @extend %medium-text;
   text-transform: uppercase;
 }

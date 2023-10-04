@@ -4,9 +4,10 @@
   justify-content: center;
 
   &__block {
+    @extend %flex;
+
     width: 1170px;
     flex-direction: column;
-    @extend %flex;
   }
   
   // portfolio-filters
@@ -83,26 +84,51 @@
     position: relative;
   }
 
+  &__overlay {
+    @extend %flex;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform 800ms ease-in-out;
+  }
+
+  &__overlay-text {
+    width: 322px;
+    color: $white;
+    font-family: $mainfont;
+    font-size: 18px;
+    font-weight: $subtitlefont-weight;
+    line-height: 28px;
+    letter-spacing: 0.54px;
+  }
+
   &__card-text {
     margin: 20px 24px;
   }
 
   &__text-title {
+    @extend %medium-text;
+
     color: $mainColor;
     font-family: $mainfont;
     font-size: 18px;
-    @extend %medium-text;
     line-height: 36px;
     letter-spacing: 1.08px;
     width: 322px;
   }
 
   &__text-subtitle {
+    @extend %main-text;
+
     margin-top: 4px;
     color: $notactiveColor;
     font-family: $mainfont;
     font-size: 16px;
-    @extend %main-text;
     line-height: 30px;
     letter-spacing: 0.48px;
     width: 322px;

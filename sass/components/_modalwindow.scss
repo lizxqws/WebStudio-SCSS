@@ -59,7 +59,6 @@
   border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
-}
 
   &__icon {
     position: absolute;
@@ -133,12 +132,13 @@
 }
 
 .checked {
+  @extend %main-text;
+
   font-family: $mainfont;
   color: $notactiveColor;
   line-height: 24px;
   letter-spacing: 0.42px;
   margin-left: 8px;
-  @extend %main-text;
 
   a {
     color: $activeColor;
@@ -159,7 +159,7 @@
   &:hover {
     background: #188ce8;
   }
-
+}
 
 .btn-send {
   @include button($button-width: 200px);
