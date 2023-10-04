@@ -131,6 +131,7 @@
 .solution-overlay {
   background: rgba(47, 48, 58, 0.4);
   position: absolute;
+  width: 100vw;
   top: 0;
   left: 0;
   right: 0;
@@ -213,7 +214,6 @@
   background-color: transparent;
   cursor: pointer;
 }
-
 .icon-button__icon {
   position: absolute;
   top: 50%;
@@ -291,7 +291,6 @@
   letter-spacing: 0.42px;
   margin-left: 8px;
 }
-
 .checked a {
   color: #2196F3;
   line-height: 24px;

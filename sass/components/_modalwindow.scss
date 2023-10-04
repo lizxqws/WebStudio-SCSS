@@ -61,12 +61,13 @@
   cursor: pointer;
 }
 
-.icon-button__icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  fill: black;
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: black;
+  }
 }
 
 .field__wrapper {
@@ -138,13 +139,13 @@
   letter-spacing: 0.42px;
   margin-left: 8px;
   @extend %main-text;
-}
 
-.checked a {
-  color: $activeColor;
-  line-height: 24px;
-  letter-spacing: 0.42px;
-  text-decoration-line: underline;
+  a {
+    color: $activeColor;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    text-decoration-line: underline;
+  }
 }
 
 .btn__box {
@@ -158,6 +159,10 @@
   &:hover {
     background: #188ce8;
   }
+
+
+.btn-send {
+  @include button($button-width: 200px);
 
   &-send {
     @include button($button-width: 200px);
