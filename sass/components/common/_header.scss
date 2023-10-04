@@ -27,7 +27,7 @@
 
   &-line {
     border: none;
-    background-color: #ECECEC;
+    background-color: #ececec;
     height: 1px;
     margin: 0;
   }
@@ -78,7 +78,8 @@
   color: $activeColor;
 }
 
-.text--envelope, .phone-number {
+.text--envelope,
+.phone-number {
   margin-left: 10px;
   color: $notactiveColor;
   font-family: $mainfont;
@@ -86,6 +87,7 @@
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+  cursor: pointer;
 }
 
 .icon--email {
