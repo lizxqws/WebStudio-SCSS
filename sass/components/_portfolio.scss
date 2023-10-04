@@ -8,7 +8,43 @@
     flex-direction: column;
     @extend %flex;
   }
+  
+  // portfolio-filters
 
+  &__filters {
+    width: 575px;
+    @extend %flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  &__filter-item {
+    @extend %flex;
+    font-family: $mainfont;
+    background: $lightgreyColor;
+    border-radius: 4px;
+    height: 38px;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+    padding: 6px 22px;
+
+    &:first-child {
+      width: 73px;
+      padding: 6px 25px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: $activeColor;
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+        0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
   // portfolio-cars
 
   &__block-cards {
@@ -28,6 +64,7 @@
     position: relative;
 
     &:hover {
+      cursor: pointer;
       border: 1px solid #eee;
       background: $white;
       box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),

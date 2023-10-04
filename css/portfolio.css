@@ -10,7 +10,8 @@
   font-style: normal;
 }
 
-#ftr-email__field::placeholder, .ftr-address, .portfolio__text-subtitle, .text--envelope, .phone-number, .nav__item {
+#ftr-email__field::placeholder, .ftr-address, .portfolio__text-subtitle, .text--envelope,
+.phone-number, .nav__item {
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -43,7 +44,7 @@
 }
 .header-line {
   border: none;
-  background-color: #ECECEC;
+  background-color: #ececec;
   height: 1px;
   margin: 0;
 }
@@ -90,13 +91,15 @@
   color: #2196F3;
 }
 
-.text--envelope, .phone-number {
+.text--envelope,
+.phone-number {
   margin-left: 10px;
   color: #757575;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+  cursor: pointer;
 }
 
 .icon--email {
@@ -126,6 +129,34 @@
   width: 1170px;
   flex-direction: column;
 }
+
+.portfolio__filters {
+  width: 575px;
+  justify-content: space-between;
+  list-style: none;
+}
+.portfolio__filter-item {
+  font-family: "Roboto", sans-serif;
+  background: #F5F4FA;
+  border-radius: 4px;
+  height: 38px;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.48px;
+  padding: 6px 22px;
+}
+.portfolio__filter-item:first-child {
+  width: 73px;
+  padding: 6px 25px;
+}
+.portfolio__filter-item:hover {
+  cursor: pointer;
+  background-color: #2196F3;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
 .portfolio__block-cards {
   margin-top: 48px;
   display: flex;
@@ -142,6 +173,7 @@
   position: relative;
 }
 .portfolio__card:hover {
+  cursor: pointer;
   border: 1px solid #eee;
   background: #FFF;
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
@@ -286,6 +318,7 @@ footer {
 }
 .ftr-socialLinks__ellipse:hover {
   background-color: #2196F3;
+  cursor: pointer;
 }
 .ftr-socialIcon {
   fill: #FFF;
@@ -322,6 +355,7 @@ footer {
   background: #2196F3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
+  cursor: pointer;
 }
 .ftr-sendIcon {
   margin-left: 10px;

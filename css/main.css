@@ -1,4 +1,4 @@
-.ftr__btn, .ftr-socialLinks__ellipse, .ftr-socialLinks__block, footer, .social-links__ellipse, .social-links, .ourservices__label, .ourservices__pictures, .ourspecialty__rectangle, .ourspecialty__block, .btn__box, .checkbox__container, .solution__block, .solution-overlay, .header__EmailPhone, .header__block, .header {
+.ftr__btn, .ftr-socialLinks__ellipse, .ftr-socialLinks__block, footer, .social-links__ellipse, .social-links, .our-team__card-info, .our-team__block, .ourservices__label, .ourservices__pictures, .ourspecialty__rectangle, .ourspecialty__block, .btn__box, .checkbox__container, .solution__block, .solution-overlay, .header__EmailPhone, .header__block, .header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,13 +10,14 @@
   font-style: normal;
 }
 
-#ftr-email__field::placeholder, .ftr-address, .ourspecialty__text, .checked, .text--envelope, .phone-number, .nav__item {
+#ftr-email__field::placeholder, .ftr-address, .our-team__card-subtitle, .ourspecialty__text, .checked, .text--envelope,
+.phone-number, .nav__item {
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
 }
 
-.ftr-email__title, .ftr-socialLinks__title, .regular-clients__title, .ourservices__label p, .ourservices__title, .ourspecialty__title {
+.ftr-email__title, .ftr-socialLinks__title, .regular-clients__title, .our-team__title, .ourservices__label p, .ourservices__title, .ourspecialty__title {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -43,7 +44,7 @@
 }
 .header-line {
   border: none;
-  background-color: #ECECEC;
+  background-color: #ececec;
   height: 1px;
   margin: 0;
 }
@@ -90,13 +91,15 @@
   color: #2196F3;
 }
 
-.text--envelope, .phone-number {
+.text--envelope,
+.phone-number {
   margin-left: 10px;
   color: #757575;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+  cursor: pointer;
 }
 
 .icon--email {
@@ -208,6 +211,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .icon-button__icon {
@@ -313,6 +317,7 @@
   background: #2196F3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
+  cursor: pointer;
 }
 .btn:hover {
   background: #188ce8;
@@ -331,6 +336,7 @@
   background: #2196F3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
+  cursor: pointer;
   background: #2196f3;
 }
 .btn-send:hover {
@@ -403,6 +409,60 @@
   text-transform: uppercase;
 }
 
+.our-team {
+  background-color: #F5F4FA;
+  width: 100%;
+  height: 708px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.our-team__block {
+  justify-content: space-between;
+}
+.our-team__title {
+  color: #212121;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+.our-team__card {
+  width: 270px;
+  height: 428px;
+  border-radius: 0px 0px 4px 4px;
+  background: #fff;
+  /* material shadow v1 */
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.our-team__card-image {
+  height: 260px;
+}
+.our-team__card-info {
+  flex-direction: column;
+}
+.our-team__card-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.our-team__card-subtitle {
+  color: #757575;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  margin-bottom: 16px;
+}
+
 .social-links {
   width: 206px;
   justify-content: space-between;
@@ -419,6 +479,7 @@
 }
 .social-links__ellipse:hover {
   background-color: #2196F3;
+  cursor: pointer;
 }
 .social-links__ellipse:hover .social-icon use {
   fill: white;
@@ -453,6 +514,7 @@
 }
 .regular-clients__card:hover {
   border: 1px solid #2196F3;
+  cursor: pointer;
 }
 .regular-clients__card:hover .regular-clients__icon use {
   fill: #2196F3;
@@ -507,6 +569,7 @@ footer {
 }
 .ftr-socialLinks__ellipse:hover {
   background-color: #2196F3;
+  cursor: pointer;
 }
 .ftr-socialIcon {
   fill: #FFF;
@@ -543,6 +606,7 @@ footer {
   background: #2196F3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
+  cursor: pointer;
 }
 .ftr-sendIcon {
   margin-left: 10px;
