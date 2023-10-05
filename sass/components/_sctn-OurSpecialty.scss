@@ -1,17 +1,15 @@
 .ourspecialty {
   &__block {
-    @extend %flex;
-    justify-content: space-between;
-    margin-bottom: 94px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &-box {
-    width: 270px;
-    height: 248px;
-
-    &__boxSmall {
-      height: 224px;
-    }
+    max-width: 450px;
+    height: 226px;
+    margin-bottom: 30px;
 
     &__rectangle {
       @extend %flex;
@@ -25,6 +23,7 @@
     &__title {
       @extend %medium-text;
 
+      text-align: center;
       color: $mainColor;
       font-family: $mainfont;
       font-size: 14px;
@@ -39,6 +38,59 @@
       font-family: $mainfont;
       line-height: 24px;
       letter-spacing: 0.42px;
+    }
+  }
+
+  &-box:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .ourspecialty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__block {
+      width: 738px;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &-box {
+      width: 354px;
+      height: 224px;
+      margin-bottom: 30px;
+
+      &__title {
+        text-align: start;
+      }
+    }
+    &-box:nth-child(3) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .ourspecialty {
+    &__block {
+      width: 1170px;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      margin-bottom: 94px;
+    }
+
+    &-box {
+      max-width: 270px;
+      height: 248px;
+      margin-bottom: 0;
+
+      &__boxSmall {
+        height: 224px;
+      }
     }
   }
 }

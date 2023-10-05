@@ -1,4 +1,4 @@
-.ftr__btn, .ftr-socialLinks__ellipse, .ftr-socialLinks__block, footer, .social-links__ellipse, .social-links, .our-team__card-info, .our-team__block, .ourservices__label, .ourservices__pictures, .ourspecialty-box__rectangle, .ourspecialty__block, .btn__box, .checkbox__container, .solution__block, .solution-overlay, .header__EmailPhone, .header__block, .header {
+.ftr__btn, .ftr-socialLinks__ellipse, .ftr-socialLinks__block, footer, .social-links__ellipse, .social-links, .our-team__card-info, .our-team__block, .ourservices__label, .ourservices__pictures, .ourspecialty-box__rectangle, .btn__box, .checkbox__container, .solution__block, .solution-overlay, .header__EmailPhone, .header__block, .header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,7 +131,6 @@
 .solution-overlay {
   background: rgba(47, 48, 58, 0.4);
   position: absolute;
-  width: 100vw;
   top: 0;
   left: 0;
   right: 0;
@@ -360,15 +359,15 @@
 }
 
 .ourspecialty__block {
-  justify-content: space-between;
-  margin-bottom: 94px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .ourspecialty-box {
-  width: 270px;
-  height: 248px;
-}
-.ourspecialty-box__boxSmall {
-  height: 224px;
+  max-width: 450px;
+  height: 226px;
+  margin-bottom: 30px;
 }
 .ourspecialty-box__rectangle {
   height: 120px;
@@ -377,6 +376,7 @@
   margin-bottom: 30px;
 }
 .ourspecialty-box__title {
+  text-align: center;
   color: #212121;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -389,7 +389,50 @@
   line-height: 24px;
   letter-spacing: 0.42px;
 }
+.ourspecialty-box:last-child {
+  margin-bottom: 0;
+}
 
+@media (min-width: 768px) {
+  .ourspecialty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ourspecialty__block {
+    width: 738px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .ourspecialty-box {
+    width: 354px;
+    height: 224px;
+    margin-bottom: 30px;
+  }
+  .ourspecialty-box__title {
+    text-align: start;
+  }
+  .ourspecialty-box:nth-child(3) {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .ourspecialty__block {
+    width: 1170px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-bottom: 94px;
+  }
+  .ourspecialty-box {
+    max-width: 270px;
+    height: 248px;
+    margin-bottom: 0;
+  }
+  .ourspecialty-box__boxSmall {
+    height: 224px;
+  }
+}
 .ourservices__title {
   color: #212121;
   text-align: center;
@@ -672,6 +715,6 @@ footer {
 }
 
 .container {
-  width: 1170px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
 }
