@@ -159,32 +159,32 @@
   background-size: cover;
   background-position: center;
   height: 400px;
-  background-image: url(../assets/solution-mobile1.jpg);
+  background-image: url(../assets/solution-mobile@1x.jpg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .solution {
-    background-image: url(../assets/solution-mobile2.jpg);
+    background-image: url(../assets/solution-mobile@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .solution {
-    background-image: url(../assets/solution-tablet1.jpg);
+    background-image: url(../assets/solution-tablet@1x.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .solution {
-    background-image: url(../assets/solution-tablet2.jpg);
+    background-image: url(../assets/solution-tablet@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .solution {
     height: 600px;
-    background-image: url(../assets/solution-desk1.jpg);
+    background-image: url(../assets/solution-desk@1x.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .solution {
-    background-image: url(../assets/solution-desk2.jpg);
+    background-image: url(../assets/solution-desk@2x.jpg);
   }
 }
 
