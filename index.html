@@ -12,11 +12,20 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header container">
+        <svg class="logo" width="145" height="20" viewBox="0 0 145 20">
+            <use xlink:href="./assets/WebStudioBlack.svg#WebStudioBlack"></use>
+        </svg>
         <div class="header__block">
-            <svg width="145" height="20" viewBox="0 0 145 20">
-                <use xlink:href="./assets/WebStudioBlack.svg#WebStudioBlack"></use>
-            </svg>
+            <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            >
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <use xlink:href="./assets/mobile-menu.svg#mobile-menu"></use>
+                </svg>
+            </button>
             <nav>
                 <ul class="nav">
                     <li class="nav__item"><a href="./index.html">Студія</a></li>
@@ -163,7 +172,7 @@
         </div>
     </section>
     <!--Section "Our team" -->
-    <section class="our-team">
+    <!-- <section class="our-team">
         <h2 class="our-team__title">Наша команда</h2>
         <div class="our-team__block container">
             <div class="our-team__card">
@@ -283,7 +292,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Section "Regular clients" -->
     <section class="container regular-clients">
         <h2 class="regular-clients__title">Постійні клієнти</h2>
@@ -374,6 +383,40 @@
             </form>
         </section>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg width="40" height="40" viewBox="0 0 40 40">
+                <use xlink:href="./assets/mobile-menu-close.svg#mobile-menu-close"></use>
+            </svg>
+        </button>
+        <ul class="mb-menu-nav">
+            <li class="nav__item"><a href="./index.html">Студія</a></li>
+            <li class="nav__item"><a href="./portfolio.html">Портфоліо</a></li>
+            <li class="nav__item"><a href="">Контакти</a></li>
+        </ul>
+        <div class="mb-menu">
+            <div class="mb-menu-text">
+                <p class="phone-number">+38 096 111 11 11</p>
+                <p class="text--envelope">info@devstudio.com</p>
+            </div>
+            <div class="mb-menu__social-links">
+                <a class="mb-menu__social-links-item" href="https://www.instagram.com/">Instagram</a>
+                <hr>
+                <a class="mb-menu__social-links-item" href="https://twitter.com/">Twitter</a>
+                <hr>
+                <a class="mb-menu__social-links-item" href="https://www.facebook.com/">Facebook</a>
+                <hr>
+                <a class="mb-menu__social-links-item" href="https://www.linkedin.com/">LinkedIn</a>
+            </div>
+        </div>
+    </div>  
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html> 
