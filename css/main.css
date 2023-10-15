@@ -1,4 +1,4 @@
-.ftr__btn, .ftr-socialLinks__ellipse, .ftr-socialLinks__block, footer, .social-links__ellipse, .social-links, .our-team__card-info, .ourservices__label, .ourservices__pictures, .ourspecialty-box__rectangle, .ourspecialty__block, .btn__box, .checkbox__container, .solution__block, .solution-overlay, .header__EmailPhone, .header__block, .header {
+.ftr__btn, .ftr-socialLinks__ellipse, .ftr-socialLinks__block, footer, .social-links__ellipse, .social-links, .our-team__card-info, .our-team, .ourservices__label, .ourservices__pictures, .ourspecialty-box__rectangle, .ourspecialty__block, .btn__box, .checkbox__container, .solution__block, .solution-overlay, .header__EmailPhone, .header__block, .header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -426,9 +426,6 @@
 }
 
 .our-team {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   background-color: #F5F4FA;
   height: auto;
