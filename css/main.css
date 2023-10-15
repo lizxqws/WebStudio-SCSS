@@ -1,4 +1,4 @@
-.ftr__btn, .ftr-socialLinks__ellipse, .ftr-socialLinks__block, footer, .regular-clients-cntr__card, .regular-clients, .social-links__ellipse, .social-links, .our-team__block,  .ourspecialty__block, .our-team__card-info, .our-team, .ourservices__label, .ourservices__pictures, .ourspecialty-box__rectangle, .btn__box, .checkbox__container, .solution__block, .solution-overlay, .header__EmailPhone, .header__block, .header {
+.ftr__btn, .ftr-socialLinks__ellipse, .ftr-socialLinks__block, footer, .regular-clients-cntr__card, .regular-clients, .social-links__ellipse, .social-links, .our-team__block, .our-team__card-info, .our-team, .ourservices__label, .ourservices__pictures, .ourspecialty-box__rectangle, .btn__box, .checkbox__container, .solution__block, .solution-overlay, .header__EmailPhone, .header__block, .header {
   display: flex;
   align-items: center;
   justify-content: center;
