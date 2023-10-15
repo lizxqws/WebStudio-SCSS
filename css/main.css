@@ -10,7 +10,7 @@
   font-style: normal;
 }
 
-#ftr-email__field::placeholder, .ftr-address, .our-team__card-subtitle, .ourspecialty-box__text, .checked, .text--envelope,
+#ftr-email__field::placeholder, .ftr-address, .our-team__card-subtitle, .ourspecialty-box__text, .mw__text, .text--envelope,
 .phone-number, .nav__item {
   font-size: 14px;
   font-weight: 400;
@@ -159,7 +159,6 @@
   line-height: normal;
   letter-spacing: 0.12px;
   font-size: 12px;
-  font-weight: 400;
 }
 
 .backdrop {
@@ -182,8 +181,8 @@
 }
 
 .modal-window {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   border-radius: 4px;
   background: #FFF;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -199,6 +198,7 @@
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.6px;
+  line-height: 30px;
   margin-bottom: 12px;
 }
 
@@ -233,6 +233,8 @@
 .field__title {
   color: #757575;
   margin-bottom: 4px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .field__box {
@@ -247,7 +249,7 @@
 
 .field {
   padding: 11px 12px;
-  width: 448px;
+  width: 370px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -284,16 +286,12 @@
 }
 
 .checked {
-  font-family: "Roboto", sans-serif;
   color: #757575;
-  line-height: 24px;
-  letter-spacing: 0.42px;
+  letter-spacing: 0.36px;
   margin-left: 8px;
 }
 .checked a {
   color: #2196F3;
-  line-height: 24px;
-  letter-spacing: 0.42px;
   text-decoration-line: underline;
 }
 
@@ -308,7 +306,7 @@
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
-  width: 216px;
+  width: 200px;
   height: 50px;
   border-radius: 4px;
   border: none;
@@ -337,27 +335,44 @@
   text-align: center;
   cursor: pointer;
 }
-.btn-send-send {
-  color: #FFF;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.96px;
-  width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  border: none;
-  background: #2196F3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  text-align: center;
-  cursor: pointer;
-  background: #2196f3;
-}
-.btn-send-send:hover {
+.btn-send:hover {
   background: #188ce8;
 }
 
+@media (min-width: 1200px) {
+  .modal-window {
+    width: 528px;
+    height: 581px;
+  }
+  .field {
+    width: 448px;
+  }
+  .checked {
+    color: #757575;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+  }
+  .checked a {
+    line-height: 24px;
+    letter-spacing: 0.42px;
+  }
+  .btn {
+    color: #FFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    width: 216px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    cursor: pointer;
+  }
+}
 .ourspecialty__block {
   margin-bottom: 60px;
   display: flex;
