@@ -519,9 +519,9 @@
 .regular-clients-cntr__box {
   max-width: 450px;
   display: flex;
-  flex-wrap: wrap;
   margin-top: 30px;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 .regular-clients-cntr__icon {
   width: 106px;
@@ -539,9 +539,6 @@
 .regular-clients-cntr__card:last-child {
   margin: 0;
 }
-.regular-clients-cntr__card:nth-child(5) {
-  margin: 0;
-}
 .regular-clients-cntr__card:hover {
   border: 1px solid #2196F3;
   cursor: pointer;
@@ -550,6 +547,19 @@
   fill: #2196F3;
 }
 
+@media (min-width: 480px) {
+  .regular-clients {
+    flex-direction: column;
+  }
+  .regular-clients-cntr__box {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .regular-clients-cntr__card:nth-child(5) {
+    margin: 0;
+  }
+}
 @media (min-width: 768px) {
   .regular-clients-cntr {
     max-width: 738px;
