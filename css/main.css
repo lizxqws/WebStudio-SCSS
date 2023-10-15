@@ -1,4 +1,4 @@
-.ftr__btn, .ftr-socialLinks__ellipse, .ftr-socialLinks__block, footer, .regular-clients-cntr__card, .regular-clients, .social-links__ellipse, .social-links, .our-team__block, .our-team__card-info, .our-team, .ourservices__label, .ourservices__pictures, .ourspecialty-box__rectangle, .btn__box, .checkbox__container, .solution__block, .solution-overlay, .header__EmailPhone, .header__block, .header {
+.ftr__btn, .ftr-socialLinks__ellipse, .ftr-socialLinks__block, footer, .regular-clients-cntr__card, .regular-clients, .social-links__ellipse, .social-links, .our-team__card-info, .our-team, .ourspecialty-box__rectangle, .btn__box, .checkbox__container, .solution__block, .solution-overlay, .header__EmailPhone, .header__block, .header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,7 +17,7 @@
   font-style: normal;
 }
 
-.ftr-email__title, .ftr-socialLinks__title, .regular-clients-cntr__title, .our-team__title, .ourservices__label p, .ourservices__title, .ourspecialty-box__title {
+.ftr-email__title, .ftr-socialLinks__title, .regular-clients-cntr__title, .our-team__title, .ourspecialty-box__title {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -393,6 +393,45 @@
   margin-bottom: 0;
 }
 
+@media (min-width: 768px) {
+  .ourspecialty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ourspecialty__block {
+    width: 738px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .ourspecialty-box {
+    width: 354px;
+    height: 224px;
+    margin-bottom: 30px;
+  }
+  .ourspecialty-box__title {
+    text-align: start;
+  }
+  .ourspecialty-box:nth-child(3) {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .ourspecialty__block {
+    width: 1170px;
+    flex-wrap: nowrap;
+    margin-bottom: 94px;
+  }
+  .ourspecialty-box {
+    max-width: 270px;
+    height: 248px;
+    margin-bottom: 0;
+  }
+  .ourspecialty-box__boxSmall {
+    height: 224px;
+  }
+}
 .ourservices {
   display: none;
 }
