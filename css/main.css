@@ -420,7 +420,6 @@
 @media (min-width: 1200px) {
   .ourspecialty__block {
     width: 1170px;
-    justify-content: space-between;
     flex-wrap: nowrap;
     margin-bottom: 94px;
   }
