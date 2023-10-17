@@ -11,6 +11,7 @@
   }
 
   &__title {
+    height: 84px;
     color: $white;
     text-align: center;
     font-family: $mainfont;
@@ -33,6 +34,7 @@
     }
 
     &__title {
+      height: 120px;
       font-size: 44px;
       line-height: 60px;
       letter-spacing: 2.64px;

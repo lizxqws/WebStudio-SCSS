@@ -130,6 +130,7 @@
   height: 164px;
 }
 .solution__title {
+  height: 84px;
   color: #FFF;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -150,6 +151,7 @@
     height: 200px;
   }
   .solution__title {
+    height: 120px;
     font-size: 44px;
     line-height: 60px;
     letter-spacing: 2.64px;
