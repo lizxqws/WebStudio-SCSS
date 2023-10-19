@@ -1,4 +1,4 @@
-.ftr__btn, .ftr-socialLinks__ellipse, .ftr-socialLinks__block, footer, .regular-clients-cntr__card, .regular-clients, .social-links__ellipse, .social-links, .our-team__card-info, .our-team, .ourspecialty-box__rectangle, .btn__box, .checkbox__container, .solution__block, .solution-overlay, .header__EmailPhone, .header__block, .header {
+.ftr__btn, .ftr-socialLinks__ellipse, .ftr-socialLinks__block, footer, .regular-clients-cntr__card, .regular-clients, .social-links__ellipse, .social-links, .our-team__card-info, .our-team, .ourspecialty-box__rectangle, .btn__box, .checkbox__container, .solution__block, .solution-overlay, .header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,8 +10,7 @@
   font-style: normal;
 }
 
-#ftr-email__field::placeholder, .ftr-address, .our-team__card-subtitle, .ourspecialty-box__text, .mw__text, .text--envelope,
-.phone-number, .nav__item {
+#ftr-email__field::placeholder, .ftr-address, .our-team__card-subtitle, .ourspecialty-box__text, .mw__text {
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -209,16 +208,16 @@
 .mb-menu-nav {
   list-style: none;
 }
+.mb-menu-nav :nth-child(2) {
+  margin-top: 36px;
+  margin-bottom: 32px;
+}
 .mb-menu-nav .nav__item {
   font-size: 40px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.8px;
-}
-.mb-menu-nav .nav__item :nth-child(2) {
-  margin-top: 36px;
-  margin-bottom: 32px;
 }
 .mb-menu-nav .nav__item a {
   color: #212121;
