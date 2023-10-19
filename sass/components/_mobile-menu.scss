@@ -48,20 +48,21 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.8px;
-  }
 
-  .nav__item a {
-    color: $mainColor;
-    font-family: $mainfont;
-    text-decoration: none;
-  }
-  .nav__item a:hover {
-    color: $activeColor;
-  }
+    :nth-child(2) {
+      margin-top: 36px;
+      margin-bottom: 32px;
+    }
 
-  .nav__item:nth-child(2) {
-    margin-top: 36px;
-    margin-bottom: 32px;
+    a {
+      color: $mainColor;
+      font-family: $mainfont;
+      text-decoration: none;
+
+      :hover {
+        color: $activeColor;
+      }
+    }
   }
 }
 

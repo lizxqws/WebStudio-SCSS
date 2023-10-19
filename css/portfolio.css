@@ -215,17 +215,17 @@
   line-height: normal;
   letter-spacing: 0.8px;
 }
+.mb-menu-nav .nav__item :nth-child(2) {
+  margin-top: 36px;
+  margin-bottom: 32px;
+}
 .mb-menu-nav .nav__item a {
   color: #212121;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
 }
-.mb-menu-nav .nav__item a:hover {
+.mb-menu-nav .nav__item a :hover {
   color: #2196F3;
-}
-.mb-menu-nav .nav__item:nth-child(2) {
-  margin-top: 36px;
-  margin-bottom: 32px;
 }
 
 .mb-menu {
