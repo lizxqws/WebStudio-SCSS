@@ -1,40 +1,73 @@
 .solution {
-  background-image: url(../assets/solutions.png);
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 600px;
-  position: relative;
-  margin-bottom: 94px;
-
-  &-overlay {
-    @extend %flex;
-
-    background: rgba(47, 48, 58, 0.4);
-    position: absolute;
-
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
+  @extend %flex;
+  margin-bottom: 60px;
 
   &__block {
     @extend %flex;
     flex-direction: column;
-    width: 696px;
-    height: 200px;
+    justify-content: space-between;
+    width: 360px;
+    height: 164px;
   }
 
   &__title {
+    height: 84px;
     color: $white;
     text-align: center;
     font-family: $mainfont;
-    font-size: 44px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 900;
-    line-height: 60px;
-    letter-spacing: 2.64px;
+    line-height: 42px;
+    letter-spacing: 1.56px;
     text-transform: uppercase;
-    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .solution {
+    margin-bottom: 94px;
+
+    &__block {
+      width: 696px;
+      height: 200px;
+    }
+
+    &__title {
+      height: 120px;
+      font-size: 44px;
+      line-height: 60px;
+      letter-spacing: 2.64px;
+    }
+  }
+}
+
+.solution {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  background-image: url(../assets/solution-mobile@1x.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../assets/solution-mobile@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../assets/solution-tablet@1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../assets/solution-tablet@2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    background-image: url(../assets/solution-desk@1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../assets/solution-desk@2x.jpg);
+    }
   }
 }

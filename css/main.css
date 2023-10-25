@@ -1,4 +1,4 @@
-.ftr__btn, .ftr-socialLinks__ellipse, .ftr-socialLinks__block, footer, .regular-clients-cntr__card, .regular-clients, .social-links__ellipse, .social-links, .our-team__card-info, .our-team, .ourspecialty-box__rectangle, .btn__box, .checkbox__container, .solution__block, .solution-overlay, .header {
+.ftr__btn, .ftr-socialLinks__ellipse, .ftr-socialLinks__block, footer, .regular-clients-cntr__card, .regular-clients, .social-links__ellipse, .social-links, .our-team__card-info, .our-team, .ourspecialty-box__rectangle, .btn__box, .checkbox__container, .solution__block, .solution-overlay, .solution, .header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -282,37 +282,73 @@
   }
 }
 .solution {
-  background-image: url(../assets/solutions.png);
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 600px;
-  position: relative;
-  margin-bottom: 94px;
-}
-.solution-overlay {
-  background: rgba(47, 48, 58, 0.4);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  margin-bottom: 60px;
 }
 .solution__block {
   flex-direction: column;
-  width: 696px;
-  height: 200px;
+  justify-content: space-between;
+  width: 360px;
+  height: 164px;
 }
 .solution__title {
+  height: 84px;
   color: #FFF;
   text-align: center;
   font-family: "Roboto", sans-serif;
-  font-size: 44px;
+  font-size: 26px;
   font-style: normal;
   font-weight: 900;
-  line-height: 60px;
-  letter-spacing: 2.64px;
+  line-height: 42px;
+  letter-spacing: 1.56px;
   text-transform: uppercase;
-  margin-bottom: 30px;
+}
+
+@media (min-width: 1200px) {
+  .solution {
+    margin-bottom: 94px;
+  }
+  .solution__block {
+    width: 696px;
+    height: 200px;
+  }
+  .solution__title {
+    height: 120px;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 2.64px;
+  }
+}
+.solution {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  background-image: url(../assets/solution-mobile@1x.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .solution {
+    background-image: url(../assets/solution-mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .solution {
+    background-image: url(../assets/solution-tablet@1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .solution {
+    background-image: url(../assets/solution-tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .solution {
+    height: 600px;
+    background-image: url(../assets/solution-desk@1x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .solution {
+    background-image: url(../assets/solution-desk@2x.jpg);
+  }
 }
 
 .mw__text {
