@@ -12,11 +12,20 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header container">
+        <svg class="logo" width="145" height="20" viewBox="0 0 145 20">
+            <use xlink:href="./assets/WebStudioBlack.svg#WebStudioBlack"></use>
+        </svg>
         <div class="header__block">
-            <svg width="145" height="20" viewBox="0 0 145 20">
-                <use xlink:href="./assets/WebStudioBlack.svg#WebStudioBlack"></use>
-            </svg>
+            <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            >
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <use xlink:href="./assets/mobile-menu.svg#mobile-menu"></use>
+                </svg>
+            </button>
             <nav>
                 <ul class="nav">
                     <li class="nav__item"><a href="./index.html">Студія</a></li>
@@ -104,7 +113,8 @@
         <div class="ourspecialty__block">
             <div class="ourspecialty-box">
                 <div class="ourspecialty-box__rectangle">
-                    <img src="./assets/antenna.png" alt="antenna">
+                    <img srcset="./assets/antenna@1x.png 1x, ./assets/antenna@2x.png 2x" src="antenna@1x.png" alt="antenna"
+                    />
                 </div>
                 <h3 class="ourspecialty-box__title">увага до деталей</h3>
                 <p class="ourspecialty-box__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
@@ -112,7 +122,8 @@
             <div class="ourspecialty-box">
                 <div class="ourspecialty-box ourspecialty-box__boxSmall">
                 <div class="ourspecialty-box__rectangle">
-                    <img src="./assets/clock.png" alt="clock">
+                    <img srcset="./assets/clock@1x.png 1x, ./assets/clock@2x.png 2x" src="clock@1x.png" alt="clock"
+                    />
                 </div>
                 <h3 class="ourspecialty-box__title">пунктуальність</h3>
                 <p class="ourspecialty-box__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
@@ -121,7 +132,8 @@
             <div class="ourspecialty-box">
                 <div class="ourspecialty-box ourspecialty-box__boxSmall">
                 <div class="ourspecialty-box__rectangle">
-                    <img src="./assets/diagram.png" alt="diagram">
+                    <img srcset="./assets/diagram@1x.png 1x, ./assets/diagram@2x.png 2x" src="diagram@1x.png" alt="diagram"
+                    />
                 </div>
                 <h3 class="ourspecialty-box__title">планування</h3>
                 <p class="ourspecialty-box__text">Так само консультація з широким активом значною мірою зумовлює.</p>
@@ -129,7 +141,8 @@
             </div>
             <div class="ourspecialty-box">
                 <div class="ourspecialty-box__rectangle">
-                    <img src="./assets/astronaut.png" alt="astronaut">
+                    <img srcset="./assets/astronaut@1x.png 1x, ./assets/astronaut@2x.png 2x" src="astronaut@1x.png" alt="astronaut"
+                    />
                 </div>
                 <h3 class="ourspecialty-box__title">сучасні технології</h3>
                 <p class="ourspecialty-box__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
@@ -141,19 +154,22 @@
         <h2 class="ourservices__title">Чим ми займаємося</h2>
         <div class="ourservices__pictures">
             <div class="ourservices__image">
-                <img src="./assets/ourservices-image1.png" alt="desktop">
+                <img srcset="./assets/ourservices-image1-desk@1x.jpg 1x, ./assets/ourservices-image1-desk@2x.jpg 2x" src="ourservices-image1-desk@1x.jpg" alt="desktop"
+                />
                 <div class="ourservices__label">
                     <p>Десктопні додатки</p>
                 </div>
             </div>
             <div class="ourservices__image">
-                <img src="./assets/ourservices-image2.png" alt="mobile">
+                <img srcset="./assets/ourservices-image2-desk@1x.jpg 1x, ./assets/ourservices-image2-desk@2x.jpg 2x" src="ourservices-image2-desk@1x.jpg" alt="mobile"
+                />
                 <div class="ourservices__label">
                     <p>Мобільні додатки</p>
                 </div>
             </div>
             <div class="ourservices__image">
-                <img src="./assets/ourservices-image3.png" alt="design">
+                <img srcset="./assets/ourservices-image3-desk@1x.jpg 1x, ./assets/ourservices-image3-desk@2x.jpg 2x" src="ourservices-image3-desk@1x.jpg" alt="design"
+                />
                 <div class="ourservices__label">
                     <p>Дизайнерські рішення</p>
                 </div>
@@ -163,9 +179,20 @@
     <!--Section "Our team" -->
     <section class="our-team">
         <h2 class="our-team__title">Наша команда</h2>
-        <div class="our-team__block container">
+        <div class="our-team__block">
             <div class="our-team__card">
-                <img class="our-team__card-image" src="./assets/ourTeam-Igor.png" alt="our-employee">
+                <picture class="our-team__card-image">
+                    <!-- desktop -->
+                    <source srcset="./assets/ourTeam-Igor-desk@1x.jpg 1x, ./assets/ourTeam-Igor-desk@3x.jpg 3x" media="(min-width: 1200px)" type="image/jpeg"
+                    />
+                    <!-- tablet -->
+                    <source srcset="./assets/ourTeam-Igor-tablet@1x.jpg 1x, ./assets/ourTeam-Igor-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"
+                    />
+                    <!-- mobile -->
+                    <source srcset="./assets/ourTeam-Igor-mob@1x.jpg 1x, ./assets/ourTeam-Igor-mob@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"
+                    />
+                    <img src="./assets/ourTeam-Igor-desk@1x.jpg" alt="our-employee">
+                </picture>
                 <div class="our-team__card-info">
                     <h3 class="our-team__card-title">Ігор Дем'яненко</h3>
                     <p class="our-team__card-subtitle">Product Designer</p>
@@ -194,7 +221,18 @@
                 </div>
             </div>
             <div class="our-team__card">
-                <img class="our-team__card-image" src="./assets/ourTeam-Olga.png" alt="our-employee"> 
+                <picture class="our-team__card-image">
+                    <!-- desktop -->
+                    <source srcset="./assets/ourTeam-Olga-desk@1x.jpg 1x, ./assets/ourTeam-Olga-desk@3x.jpg 3x" media="(min-width: 1200px)" type="image/jpeg"
+                    />
+                    <!-- tablet -->
+                    <source srcset="./assets/ourTeam-Olga-tablet@1x.jpg 1x, ./assets/ourTeam-Olga-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"
+                    />
+                    <!-- mobile -->
+                    <source srcset="./assets/ourTeam-Olga-mob@1x.jpg 1x, ./assets/ourTeam-Olga-mob@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"
+                    />
+                    <img src="./assets/ourTeam-Olga-desk@1x.jpg" alt="our-employee">
+                </picture>
                 <div class="our-team__card-info">
                     <h3 class="our-team__card-title">Ольга Рєпіна</h3>
                     <p class="our-team__card-subtitle">Frontend Developer</p>
@@ -223,7 +261,18 @@
                 </div>
             </div>
             <div class="our-team__card">
-                <img class="our-team__card-image" src="./assets/ourTeam-Mikola.png" alt="our-employee">
+                <picture class="our-team__card-image">
+                    <!-- desktop -->
+                    <source srcset="./assets/ourTeam-Mikola-desk@1x.jpg 1x, ./assets/ourTeam-Mikola-desk@3x.jpg 3x" media="(min-width: 1200px)" type="image/jpeg"
+                    />
+                    <!-- tablet -->
+                    <source srcset="./assets/ourTeam-Mikola-tablet@1x.jpg 1x, ./assets/ourTeam-Mikola-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"
+                    />
+                    <!-- mobile -->
+                    <source srcset="./assets/ourTeam-Mikola-mob@1x.jpg 1x, ./assets/ourTeam-Mikola-mob@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"
+                    />
+                    <img src="./assets/ourTeam-Mikola-desk@1x.jpg" alt="our-employee">
+                </picture>      
                 <div class="our-team__card-info">
                     <h3 class="our-team__card-title">Микола Тарасов</h3>
                     <p class="our-team__card-subtitle">Marketing</p>
@@ -252,7 +301,18 @@
                 </div>
             </div>
             <div class="our-team__card">
-                <img class="our-team__card-image" src="./assets/ourTeam-Michael.png" alt="our-employee">
+                <picture class="our-team__card-image">
+                    <!-- desktop -->
+                    <source srcset="./assets/ourTeam-Michael-desk@1x.jpg 1x, ./assets/ourTeam-Michael-desk@3x.jpg 3x" media="(min-width: 1200px)" type="image/jpeg"
+                    />
+                    <!-- tablet -->
+                    <source srcset="./assets/ourTeam-Michael-tablet@1x.jpg 1x, ./assets/ourTeam-Michael-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"
+                    />
+                    <!-- mobile -->
+                    <source srcset="./assets/ourTeam-Michael-mob@1x.jpg 1x, ./assets/ourTeam-Michael-mob@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"
+                    />
+                    <img src="./assets/ourTeam-Michael-desk@1x.jpg" alt="our-employee">
+                </picture>
                 <div class="our-team__card-info">
                     <h3 class="our-team__card-title">Михайло Єрмаков</h3>
                     <p class="our-team__card-subtitle">UI Designer</p>
@@ -284,42 +344,44 @@
     </section>
     <!-- Section "Regular clients" -->
     <section class="container regular-clients">
-        <h2 class="regular-clients__title">Постійні клієнти</h2>
-        <div class="regular-clients__block">
-            <div class="regular-clients__card">
-                <svg class="regular-clients__icon" width="106" height="60" viewBox="0 0 106 60">
-                    <use xlink:href="./assets/Logo1.svg#Logo1"></use>
-                </svg>
-            </div>
-            <div class="regular-clients__card">
-                <svg class="regular-clients__icon" width="106" height="60" viewBox="0 0 106 60">
-                    <use xlink:href="./assets/Logo2.svg#Logo2"></use>
-                </svg>
-            </div>
-            <div class="regular-clients__card">
-                <svg class="regular-clients__icon" width="106" height="60" viewBox="0 0 106 60">
-                    <use xlink:href="./assets/Logo3.svg#Logo3"></use>
-                </svg>
-            </div>
-            <div class="regular-clients__card">
-                <svg class="regular-clients__icon" width="106" height="60" viewBox="0 0 106 60">
-                    <use xlink:href="./assets/Logo4.svg#Logo4"></use>
-                </svg>
-            </div>
-            <div class="regular-clients__card">
-                <svg class="regular-clients__icon" width="106" height="60" viewBox="0 0 106 60">
-                    <use xlink:href="./assets/Logo5.svg#Logo5"></use>
-                </svg>
-            </div>
-            <div class="regular-clients__card">
-                <svg class="regular-clients__icon" width="106" height="60" viewBox="0 0 106 60">
-                    <use xlink:href="./assets/Logo6.svg#Logo6"></use>
-                </svg>
+        <div class="regular-clients-cntr">
+            <h2 class="regular-clients-cntr__title">Постійні клієнти</h2>
+            <div class="regular-clients-cntr__box">
+                <div class="regular-clients-cntr__card">
+                    <svg class="regular-clients-cntr__icon" width="106" height="60" viewBox="0 0 106 60">
+                        <use xlink:href="./assets/Logo1.svg#Logo1"></use>
+                    </svg>
+                </div>
+                <div class="regular-clients-cntr__card">
+                    <svg class="regular-clients-cntr__icon" width="106" height="60" viewBox="0 0 106 60">
+                        <use xlink:href="./assets/Logo2.svg#Logo2"></use>
+                    </svg>
+                </div>
+                <div class="regular-clients-cntr__card">
+                    <svg class="regular-clients-cntr__icon" width="106" height="60" viewBox="0 0 106 60">
+                        <use xlink:href="./assets/Logo3.svg#Logo3"></use>
+                    </svg>
+                </div>
+                <div class="regular-clients-cntr__card">
+                    <svg class="regular-clients-cntr__icon" width="106" height="60" viewBox="0 0 106 60">
+                        <use xlink:href="./assets/Logo4.svg#Logo4"></use>
+                    </svg>
+                </div>
+                <div class="regular-clients-cntr__card">
+                    <svg class="regular-clients-cntr__icon" width="106" height="60" viewBox="0 0 106 60">
+                        <use xlink:href="./assets/Logo5.svg#Logo5"></use>
+                    </svg>
+                </div>
+                <div class="regular-clients-cntr__card">
+                    <svg class="regular-clients-cntr__icon" width="106" height="60" viewBox="0 0 106 60">
+                        <use xlink:href="./assets/Logo6.svg#Logo6"></use>
+                    </svg>
+                </div>
             </div>
         </div>
     </section>
     <!-- Footer -->
-    <footer>
+   <footer>
         <section class="container ftr">
             <div class="ftr__block--address">
                 <svg width="145" height="20" viewBox="0 0 145 20">
@@ -372,6 +434,40 @@
             </form>
         </section>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg width="40" height="40" viewBox="0 0 40 40">
+                <use xlink:href="./assets/mobile-menu-close.svg#mobile-menu-close"></use>
+            </svg>
+        </button>
+        <ul class="mb-menu-nav">
+            <li class="nav__item"><a href="./index.html">Студія</a></li>
+            <li class="nav__item"><a href="./portfolio.html">Портфоліо</a></li>
+            <li class="nav__item"><a href="">Контакти</a></li>
+        </ul>
+        <div class="mb-menu">
+            <div class="mb-menu-text">
+                <p class="phone-number">+38 096 111 11 11</p>
+                <p class="text--envelope">info@devstudio.com</p>
+            </div>
+            <div class="mb-menu__social-links">
+                <a class="mb-menu__social-links-item" href="https://www.instagram.com/">Instagram</a>
+                <hr>
+                <a class="mb-menu__social-links-item" href="https://twitter.com/">Twitter</a>
+                <hr>
+                <a class="mb-menu__social-links-item" href="https://www.facebook.com/">Facebook</a>
+                <hr>
+                <a class="mb-menu__social-links-item" href="https://www.linkedin.com/">LinkedIn</a>
+            </div>
+        </div>
+    </div>  
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html> 

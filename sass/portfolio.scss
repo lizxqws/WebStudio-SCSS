@@ -3,8 +3,8 @@
 @import "utils/placeholders";
 
 @import "components/common/header";
+@import "components/mobile-menu";
 @import "components/portfolio";
-@import"components/portfolio-filters";
 @import "components/common/footer";
 
 * {
@@ -12,6 +12,14 @@
 }
 
 .container {
-  width: 1170px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    padding: 0;
+    margin: 0 auto;
+  }
 }
